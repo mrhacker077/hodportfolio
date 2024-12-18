@@ -69,12 +69,7 @@ function Skills() {
               </div>
               <div className=" px-6 py-4 space-x-3 justify-around"data-aos="fade-up"
                   data-aos-duration="2000">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded">
-                  Video
-                </button>
-                <button className="bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded">
-                  Source code
-                </button>
+               
               </div>
             </div>
           ))}
