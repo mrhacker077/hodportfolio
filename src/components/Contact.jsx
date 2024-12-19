@@ -1,71 +1,100 @@
-import React from "react";
-import { useForm } from "react-hook-form";
+import React from 'react';
 
-function Contact() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-
-  const onSubmit = (data) => {
-    console.log(data); // Placeholder for future functionality
-    alert("Form submitted! Check the console for details.");
-  };
-
+const Contact = () => {
   return (
-    <div name="Contact" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16">
-      <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
-      <span>Please fill out the form below</span>
-      <div className="flex flex-col items-center justify-center mt-5">
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="bg-slate-200 w-96 px-8 py-6 rounded-xl"
-        >
-          <h1 className="text-xl font-semibold mb-4">Send Your Message</h1>
+    <div
+    name="Contact"
+    className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20"data-aos="fade-up"
+                data-aos-duration="2000"
+  > <h1 className="text-3xl font-bold mb-5">CONTACT ME</h1>
+    <section className="bg-gray-900 text-white py-12 px-6">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Left Section - Contact Details */}
+        <div>
+          <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
+          <p className="mb-6 text-gray-400">
+            Want to get in touch? We'd love to hear from you. Here's how you can reach us..
+          </p>
+          <div className="space-y-4">
+            <div className="flex items-center space-x-4">
+              <div className="bg-blue-500 p-3 rounded-full">
+                <i className="fas fa-phone text-white"></i>
+              </div>
+              <div>
+                <p className="text-sm text-gray-400">PHONE</p>
+                <p className="text-lg">+91 9448104224</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <div className="bg-blue-500 p-3 rounded-full">
+                <i className="fas fa-envelope text-white"></i>
+              </div>
+              <div>
+                <p className="text-sm text-gray-400">EMAIL</p>
+                <p className="text-lg">parashuramd444@gmail.com</p>
+              </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <div className="bg-blue-500 p-3 rounded-full">
+                <i className="fas fa-map-marker-alt text-white"></i>
+              </div>
+              <div>
+                <p className="text-sm text-gray-400">LOCATION</p>
+                <p className="text-lg">X Street, Y Road, kpt mangalore.</p>
+              </div>
+            </div>
+          </div>
+          <div className="mt-6 flex space-x-4">
+            <a href="#" className="text-blue-500 text-2xl">
+              <i className="fab fa-facebook"></i>
+            </a>
+      
+            <a href="#" className="text-blue-500 text-2xl">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="#" className="text-blue-500 text-2xl">
+              <i className="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
 
-          <div className="flex flex-col mb-4">
-            <label className="block text-gray-700">Full Name</label>
+        {/* Right Section - Send Message Form */}
+        <div>
+          <form className="bg-gray-800 p-8 rounded-lg shadow-lg space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                className="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none"
+              />
+            </div>
             <input
-              {...register("name", { required: true })}
-              className="shadow rounded-lg appearance-none border py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text"
-              placeholder="Enter your fullname"
+              placeholder="Subject"
+              className="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none"
             />
-            {errors.name && <span className="text-red-500">This field is required</span>}
-          </div>
-
-          <div className="flex flex-col mb-4">
-            <label className="block text-gray-700">Email Address</label>
-            <input
-              {...register("email", { required: true })}
-              className="shadow rounded-lg appearance-none border py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              type="email"
-              placeholder="Enter your email address"
-            />
-            {errors.email && <span className="text-red-500">This field is required</span>}
-          </div>
-
-          <div className="flex flex-col mb-4">
-            <label className="block text-gray-700">Message</label>
             <textarea
-              {...register("message", { required: true })}
-              className="shadow rounded-lg appearance-none border py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              placeholder="Enter your message"
-            />
-            {errors.message && <span className="text-red-500">This field is required</span>}
-          </div>
-
-          <button
-            type="submit"
-            className="bg-black text-white rounded-xl px-3 py-2 hover:bg-slate-700 duration-300"
-          >
-            Submit
-          </button>
-        </form>
+              placeholder="Say Something"
+              rows="5"
+              className="w-full p-3 bg-gray-700 text-white rounded-lg focus:outline-none"
+            ></textarea>
+            <button
+              type="submit"
+              className="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
+    </section>
     </div>
   );
-}
+};
 
 export default Contact;

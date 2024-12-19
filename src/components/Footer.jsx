@@ -20,9 +20,9 @@ function Footer() {
             </div>
             <div className="mt-8 border-t border-gray-700 pt-8 flex flex-col items-center">
               <p className="text-sm">
-                &copy; 2024 Manjunath. All rights reserved.
+                &copy; 2024 KPT Mangalore All rights reserved.
               </p>
-              <p className="text-sm">Developed By ❤️ Manjunath</p>
+              <p className="text-sm">Developed By ❤️ KPT CSE Students.</p>
             </div>
           </div>
         </div>
