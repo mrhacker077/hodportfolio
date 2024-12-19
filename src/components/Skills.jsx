@@ -50,7 +50,7 @@ function Skills() {
                   data-aos-duration="2000">
           {cardItem.map(({ id, logo, name }) => (
             <div
-              className="md:w-[300px] md:h-[300px] border-[2px] rounded-lg shadow-lg p-1 cursor-pointer hover:scale-110 duration-300 bg-purple-400"
+              className="md:w-[250px] md:h-[250px] border-[2px] rounded-lg shadow-lg p-1 cursor-pointer hover:scale-110 duration-300 bg-purple-400"
               key={id}data-aos="fade-up"
                   data-aos-duration="2000"
             >
