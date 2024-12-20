@@ -31,7 +31,7 @@ const Contact = () => {
               </div>
               <div>
                 <p className="text-sm text-gray-400">EMAIL</p>
-                <p className="text-lg">parashuramd444@gmail.com</p>
+                <p className="text-lg">pdtalawar23@gmail.com</p>
               </div>
             </div>
             <div className="flex items-center space-x-4">
@@ -40,12 +40,12 @@ const Contact = () => {
               </div>
               <div>
                 <p className="text-sm text-gray-400">LOCATION</p>
-                <p className="text-lg">X Street, Y Road, kpt mangalore.</p>
+                <p className="text-lg">Bhatrakumeru, Padavinangady Mangalore 575008.</p>
               </div>
             </div>
           </div>
           <div className="mt-6 flex space-x-4">
-            <a href="#" className="text-blue-500 text-2xl">
+            <a href="https://www.facebook.com/parashuram.talawar.1?mibextid=ZbWKwL" className="text-blue-500 text-2xl">
               <i className="fab fa-facebook"></i>
             </a>
       
