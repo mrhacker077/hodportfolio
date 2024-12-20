@@ -51,9 +51,7 @@ function Experience() {
     >
       <div>
         <h1 className="text-3xl font-bold mb-5">Experience</h1>
-        <p className="  ">
-          I've more than 29 years of experience in below technologies.
-        </p>
+      
         <div className="grid grid-cols-2 md:grid-cols-5 gap-7 my-3"data-aos="zoom-in"
                   data-aos-duration="1000">
           {cardItem.map(({ id, logo, name }) => (
