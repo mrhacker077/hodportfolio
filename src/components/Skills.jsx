@@ -1,19 +1,19 @@
 import React from "react";
 import java from "../java.png";
 import python from "../python.jpeg";
-import mongoDB from "../mongodb.jpg";
+import oracle from "../oracle.png";
 import express from "../express.png";
 import reactjs from "../reactjs.png";
-import nodejs from "../node.png";
+import php from "../php.jpeg";
 
 function Skills() {
   const cardItem = [
     {
       id: 1,
-      logo: mongoDB,
-      name: "MongoDB",
+      logo: oracle,
+      name: "oracle",
       description:
-        "A NoSQL database for scalable applications with flexible JSON-like data storage.",
+        "Oracle offers database software, cloud solutions, and enterprise technology for businesses worldwide.",
     },
     {
       id: 2,
@@ -31,10 +31,10 @@ function Skills() {
     },
     {
       id: 4,
-      logo: nodejs,
-      name: "NodeJS",
+      logo: php,
+      name: "php",
       description:
-        "A runtime environment for server-side JavaScript with non-blocking I/O.",
+        "PHP is a popular open-source scripting language for creating dynamic web applications.",
     },
     {
       id: 5,
@@ -58,7 +58,7 @@ function Skills() {
       className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10"
     >
       <div>
-        <h1 className="text-3xl font-bold mb-5">Skills</h1>
+        <h1 className="text-4xl font-bold mb-5">Skills</h1>
         <div
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 my-5"
           data-aos="flip-right"

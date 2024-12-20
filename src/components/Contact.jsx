@@ -6,7 +6,7 @@ const Contact = () => {
     name="Contact"
     className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20"data-aos="fade-up"
                 data-aos-duration="2000"
-  > <h1 className="text-3xl font-bold mb-5">CONTACT ME</h1>
+  > <h1 className="text-4xl font-bold mb-5">Contact Me</h1>
     <section className="bg-gray-900 text-white py-12 px-6">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Section - Contact Details */}
@@ -45,16 +45,13 @@ const Contact = () => {
             </div>
           </div>
           <div className="mt-6 flex space-x-4">
-            <a href="https://www.facebook.com/parashuram.talawar.1?mibextid=ZbWKwL" className="text-blue-500 text-2xl">
+            <a href="https://www.facebook.com/parashuram.talawar.1?mibextid=ZbWKwL" className="text-blue-500 text-4xl">
               <i className="fab fa-facebook"></i>
             </a>
-      
-            <a href="#" className="text-blue-500 text-2xl">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="#" className="text-blue-500 text-2xl">
-              <i className="fab fa-linkedin"></i>
-            </a>
+            <div>
+            <p className="text-sm text-gray-400">FACEBOOK</p>
+            <p className="text-lg">Parashuram Talawar</p>
+            </div>
           </div>
         </div>
 

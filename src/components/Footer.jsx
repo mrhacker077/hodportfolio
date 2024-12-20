@@ -21,9 +21,18 @@ function Footer() {
               >
                 <FaFacebook size={24} />
               </a>
-              <FaTwitter size={24} />
-              <FaInstagram size={24} />
-              <FaLinkedinIn size={24} />
+              <a
+                href="https://gpt.karnataka.gov.in/kptmangalore/public/en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <FaInstagram size={24} /></a>
+              <a
+                href="https://gpt.karnataka.gov.in/kptmangalore/public/en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <FaLinkedinIn size={24} /></a>
             </div>
             <div className="mt-8 border-t border-gray-700 pt-8 flex flex-col items-center">
               <p className="text-sm">
